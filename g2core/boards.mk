@@ -24,6 +24,12 @@
 # To choose a CONFIG but apply it to a different BOARD:
 #   make CONFIG=PrintrbotPlus BOARD=g2ref-a
 
+
+ifeq ("$(CONFIG)","Chuk")
+    SETTINGS_FILE="settings_Chuk.h"
+endif
+
+
 ##########
 # V9-based configs:
 
